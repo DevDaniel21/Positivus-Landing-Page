@@ -55,6 +55,27 @@ button {
     padding: 20px 35px;
 }
 
+.heading-green {
+    color: #000;
+    background-color: var(--green);
+    padding: 0 7px;
+    border-radius: 7px;
+}
+
+.heading-white {
+    color: #fff;
+    background-color: var(--dark);
+    padding: 0 7px;
+    border-radius: 7px;
+}
+
+.heading-black {
+    color: #fff;
+    background-color: #000;
+    padding: 0 7px;
+    border-radius: 7px;
+}
+
 /*  */
 
 .navigation-bar {
