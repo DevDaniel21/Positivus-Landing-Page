@@ -15,6 +15,10 @@
     font-weight: normal;
 }
 
+body {
+    padding: 0 100px;
+}
+
 a {
     text-decoration: none;
 }
@@ -27,33 +31,52 @@ h4 {
     font-size: 1.25rem;
 }
 
+/* Buttons */
+
 button {
     cursor: pointer;
     border: unset;
+    max-width: max-content;
     font-size: 1.25rem;
+    border-radius: 14px;
+    padding: 20px 35px;
+    transition: .25s ease-in-out all;
 }
 
 .button-primary {
     background-color: var(--dark);
     color: #fff;
-    border-radius: 14px;
-    padding: 20px 35px;
+    border: 1px solid var(--dark);
 }
+
+.button-primary:is(:hover, :focus) {
+    background-color: transparent;
+    color: var(--dark);
+}
+
 
 .button-secondary {
     background-color: transparent;
     color: var(--dark);
     border: 1px solid var(--dark);
-    border-radius: 14px;
-    padding: 20px 35px;
 }
+
+.button-secondary:is(:hover, :focus) {
+    background-color: var(--dark);
+    color: #fff;
+}
+
 
 .button-terciary {
     background-color: var(--green);
     color: var(--dark);
-    border-radius: 14px;
-    padding: 20px 35px;
 }
+
+.button-terciary:is(:hover, :focus) {
+    transform: scale(1.25);
+}
+
+/* Heading */
 
 .heading-green {
     color: #000;
@@ -76,8 +99,10 @@ button {
     border-radius: 7px;
 }
 
-/*  */
+/* -------------------------------------------- */
 
+
+/* Navigation bar */
 .navigation-bar {
     display: flex;
     justify-content: space-between;
@@ -97,4 +122,46 @@ button {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 70px;
+}
+
+.hero-text {
+    width: 531px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero-image {
+    width: 600px;
+    height: 515px;
+}
+
+/* Companies */
+.companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 70px;
+}
+
+.companies-logo {
+    width: auto;
+    height: 48px;
+    filter: grayscale(1);
+    transition: .25s ease-in-out all;
+}
+
+.companies-logo:hover {
+    filter: grayscale(0);
 }
