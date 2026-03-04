@@ -1,64 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./src/style.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-</head>
+    <body>
+        <nav class="navigation-bar">
+            <a href="#">
+                <img class="logo" src="./img/assets/logo-black.png" />
+            </a>
 
-<body>
-    <nav class="navigation-bar">
-        <a href="#">
-            <img class="logo" src="logo-black.png">
-        </a>
+            <div class="navbar-item">
+                <a href="#" class="navbar-link">
+                    <h4>About us</h4>
+                </a>
+                <a href="#" class="navbar-link">
+                    <h4>Services</h4>
+                </a>
+                <a href="#" class="navbar-link">
+                    <h4>Use Cases</h4>
+                </a>
+                <a href="#" class="navbar-link">
+                    <h4>Pricing</h4>
+                </a>
+                <a href="#" class="navbar-link">
+                    <h4>Blog</h4>
+                </a>
+                <button class="button-secondary" disabled="disabled">
+                    Request a quote
+                </button>
+            </div>
+        </nav>
 
-        <div class="navbar-item">
-            <a href="#" class="navbar-link">
-                <h4>About us</h4>
-            </a>
-            <a href="#" class="navbar-link">
-                <h4>Services</h4>
-            </a>
-            <a href="#" class="navbar-link">
-                <h4>Use Cases</h4>
-            </a>
-            <a href="#" class="navbar-link">
-                <h4>Pricing</h4>
-            </a>
-            <a href="#" class="navbar-link">
-                <h4>Blog</h4>
-            </a>
-            <button class="button-secondary" disabled="disabled">Request a quote</button>
+        <header class="hero">
+            <div class="hero-text">
+                <h1>Navigating the digital landscape for success</h1>
+                <h4>
+                    Our digital marketing agency helps businesses grow and
+                    succeed online through a range of services including SEO,
+                    PPC, social media marketing, and content creation.
+                </h4>
+                <button disabled="disabled" class="button-primary">
+                    Book a consultation
+                </button>
+            </div>
+            <img class="hero-image" src="./img/assets/hero-image.png" />
+        </header>
+
+        <div class="companies">
+            <img src="./img/companies/amazon.png" class="companies-logo" />
+            <img src="./img/companies/dribbble.png" class="companies-logo" />
+            <img src="./img/companies/hubspot.png" class="companies-logo" />
+            <img src="./img/companies/notion.png" class="companies-logo" />
+            <img src="./img/companies/netflix.png" class="companies-logo" />
+            <img src="./img/companies/zoom.png" class="companies-logo" />
         </div>
-    </nav>
 
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Navigating the digital landscape for success</h1>
-            <h4>Our digital marketing agency helps businesses grow and succeed online through a range of services
-                including SEO, PPC, social media marketing, and content creation.</h4>
-            <button disabled="disabled" class="button-primary">Book a consultation</button>
+        <!-- Heading -->
+        <div class="heading-subheading">
+            <div class="heading-green">
+                <h2>Services</h2>
+            </div>
+            <div class="subheading">
+                <p>
+                    At our digital marketing agency, we offer a range of
+                    services to help businesses grow and succeed online. These
+                    services include:
+                </p>
+            </div>
         </div>
-        <img class="hero-image" src="hero-image.png">
-    </header>
 
-    <div class="companies">
-        <img src="./img/companies/amazon.png" class="companies-logo">
-        <img src="./img/companies/dribbble.png" class="companies-logo">
-        <img src="./img/companies/hubspot.png" class="companies-logo">
-        <img src="./img/companies/notion.png" class="companies-logo">
-        <img src="./img/companies/netflix.png" class="companies-logo">
-        <img src="./img/companies/zoom.png" class="companies-logo">
-    </div>
-</body>
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="cards-section">
+                <div class="card gray-card">
+                    <div class="heading-link">
+                        <div class="card-heading">
+                            <div class="heading-green">
+                                <h3>Search engine</h3>
+                            </div>
+                            <div class="heading-green">
+                                <h3>optimization</h3>
+                            </div>
+                        </div>
 
+                        <a class="link dark-link" href="#">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                            <h4>Learn more</h4>
+                        </a>
+                    </div>
+                    <img class="card-img" src="./img/cards/card-1.png" />
+                </div>
+                <div class="card green-card">
+                    <div class="heading-link">
+                        <div class="card-heading">
+                            <div class="heading-white">
+                                <h3>Pay-per-click</h3>
+                            </div>
+                            <div class="heading-white">
+                                <h3>advertising</h3>
+                            </div>
+                        </div>
+
+                        <a class="link dark-link" href="#">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                            <h4>Learn more</h4>
+                        </a>
+                    </div>
+                    <img class="card-img" src="./img/cards/card-2.png" />
+                </div>
+            </div>
+
+            <!-- Second Section -->
+
+            <div class="cards-section">
+                <div class="card dark-card">
+                    <div class="heading-link">
+                        <div class="card-heading">
+                            <div class="heading-white">
+                                <h3>Social Media</h3>
+                            </div>
+                            <div class="heading-white">
+                                <h3>Marketing</h3>
+                            </div>
+                        </div>
+
+                        <a class="link white-link" href="#">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                            <h4>Learn more</h4>
+                        </a>
+                    </div>
+                    <img class="card-img" src="./img/cards/card-3.png" />
+                </div>
+                <div class="card gray-card">
+                    <div class="heading-link">
+                        <div class="card-heading">
+                            <div class="heading-green">
+                                <h3>Email</h3>
+                            </div>
+                            <div class="heading-green">
+                                <h3>Marketing</h3>
+                            </div>
+                        </div>
+
+                        <a class="link dark-link" href="#">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                            <h4>Learn more</h4>
+                        </a>
+                    </div>
+                    <img class="card-img" src="./img/cards/card-4.png" />
+                </div>
+            </div>
+
+            <!-- Third Section -->
+
+            <div class="cards-section">
+                <div class="card green-card">
+                    <div class="heading-link">
+                        <div class="card-heading">
+                            <div class="heading-white">
+                                <h3>Content</h3>
+                            </div>
+                            <div class="heading-white">
+                                <h3>Creation</h3>
+                            </div>
+                        </div>
+
+                        <a class="link dark-link" href="#">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                            <h4>Learn more</h4>
+                        </a>
+                    </div>
+                    <img class="card-img" src="./img/cards/card-5.png" />
+                </div>
+                <div class="card dark-card">
+                    <div class="heading-link">
+                        <div class="card-heading">
+                            <div class="heading-green">
+                                <h3>Analytics and</h3>
+                            </div>
+                            <div class="heading-green">
+                                <h3>Tracking</h3>
+                            </div>
+                        </div>
+
+                        <a class="link white-link" href="#">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                            <h4>Learn more</h4>
+                        </a>
+                    </div>
+                    <img class="card-img" src="./img/cards/card-6.png" />
+                </div>
+            </div>
+        </section>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
 </html>
